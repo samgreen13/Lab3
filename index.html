@@ -54,11 +54,11 @@
          }).addTo(map);
 
 		 function getColor(value) {
-			return value == "Arctic" ? '#a6cee3':
+			    return value == "Arctic" ? '#a6cee3':
 				   value == "Central Indo-Pacific"  ? '#1f78b4':
 				   value == "Eastern Indo-Pacific"  ? '#b2df8a':
 				   value == "Southern Ocean"  ? '#33a02c':
-                   value == "Temperate Australia"  ? '#fb9a99':
+                   		   value == "Temperate Australia"  ? '#fb9a99':
 				   value == "Temperate Northern Atlantic"  ? '#e31a1c':
 				   value == "Temperate Northern Pacific"  ? '#fdbf6f':
 				   value == "Temperate South America"  ? '#ff7f00':
@@ -132,7 +132,7 @@
 
 			 // Loop through our the classes and generate a label with a color box for each interval.
 			 // If you are creating a choropleth map, you DO NOT need to change lines below.
-			 for (var i = 1; i < labels.length; i++) {
+			 for (var i = 0; i < labels.length; i++) {
 				div.innerHTML +=
 				
 				'<i style="background:' + getColor(labels[i]) + '"></i>' +
